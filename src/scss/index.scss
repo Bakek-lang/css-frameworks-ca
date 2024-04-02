@@ -1,1 +1,36 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
 
+// Include any default variable overrides here (though functions won't be available)
+
+$orange: #ff6600;
+$blue: #003366;
+
+$form-switch-color: $blue;
+$form-switch-focus-color: $blue;
+$form-switch-checked-color: $orange;
+
+$dropdown-link-color: $blue;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// Then add additional custom code here
+.navbar-brand,
+.navbar-brand:visited,
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active,
+.bi-list,
+.navbar-nav a {
+  color: $orange !important;
+}
+
+.navbar {
+  background-color: $blue !important;
+}
+
+main {
+  padding-top: 56px;
+}
