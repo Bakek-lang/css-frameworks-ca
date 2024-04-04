@@ -5,12 +5,17 @@
 
 $orange: #ff6600;
 $blue: #003366;
+$light: #fff;
 
 $form-switch-color: $blue;
 $form-switch-focus-color: $blue;
 $form-switch-checked-color: $orange;
 
 $dropdown-link-color: $blue;
+
+$input-bg: $light;
+
+$body-bg: #f0f0f0;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -23,14 +28,22 @@ $dropdown-link-color: $blue;
 .navbar-brand:focus,
 .navbar-brand:active,
 .bi-list,
-.navbar-nav a {
+.navbar-nav a,
+footer div span,
+footer div i {
   color: $orange !important;
 }
 
-.navbar {
+.navbar,
+footer {
   background-color: $blue !important;
 }
 
 main {
-  padding-top: 56px;
+  padding-top: 66px !important;
+}
+.custom-max-width {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
