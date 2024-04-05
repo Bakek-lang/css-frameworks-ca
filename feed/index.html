@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to WebTown, the place to watch what your friends are doing.">
     <script
       src="https://kit.fontawesome.com/d59adeadcb.js"
       crossorigin="anonymous"
@@ -13,13 +14,17 @@
       defer
     ></script>
     <link rel="stylesheet" href="/dist/css/index.css" />
-    <title>WebTown</title>
+    <title>WebTown | Feed</title>
   </head>
   <body class="d-flex flex-column vh-100">
     <header>
       <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-        <div class="container-fluid d-flex justify-content-between">
-          <a class="navbar-brand" href="#">WebTown</a>
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div class="text-center flex-grow-1 ms-5 ms-md-0">
+            <a class="navbar-brand h1" href="../index.html">WebTown</a>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -33,8 +38,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Feed</a>
-              <a class="nav-link" href="#">Profile</a>
+              <a class="nav-link active" aria-current="page" href="../feed/"
+                >Feed</a
+              >
+              <a class="nav-link" href="../profile/">Profile</a>
             </div>
           </div>
         </div>
@@ -42,49 +49,171 @@
     </header>
 
     <main
-      class="container d-flex flex-column justify-content-center align-items-center mt-5 flex-grow-1"
+      class="container-fluid rounded d-flex justify-content-center custom-max-width flex-wrap"
     >
-      <h1>Welcome back!</h1>
-      <div
-        class="form-signin col-6 bg-light d-flex justify-content-center align-items-center mt-5 rounded"
+      <section
+        class=" mb-4 col-12 col-lg-10 bg-light rounded shadow"
       >
-        <form>
-          <h2 class="h3 mb-3 fw-normal my-3">Login</h2>
-          <div class="form-floating my-3">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-            />
-            <label for="floatingInput">Email address</label>
+      <div class="container my-4">
+        <div class="d-flex align-items-start">
+          <div class="pe-2">
+            <img
+                    src="../src/images/author.webp"
+                    class="rounded-circle me-2"
+                    alt="User"
+                    width="40"
+                    height="40"
+                  />
           </div>
-          <div class="form-floating my-3">
-            <input
-              type="password"
-              class="form-control"
-              id="floatingPassword"
-              placeholder="Password"
-            />
-            <label for="floatingPassword">Password</label>
+          <div class="flex-grow-1">
+            <textarea type="text" class="form-control mb-2" placeholder="What are you thinking about?"></textarea>
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-primary">Post</button>
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <h3>Latest Posts</h3>
 
-          <div class="form-check text-start my-3">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value="remember-me"
-              id="flexCheckDefault"
-            />
-            <label class="form-check-label" for="flexCheckDefault">
-              Remember me
-            </label>
-          </div>
-          <button class="btn btn-primary w-100 py-2 my-3" type="submit">
-            Enter
+      </div>
+      <div class="d-flex align-items-center col-12 ">
+        <div class="dropdown">
+          <button class="btn ms-3 btn-secondary dropdown-toggle" type="button" id="sortButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Sort
           </button>
+          <ul class="dropdown-menu" aria-labelledby="sortButton">
+            <li><a class="dropdown-item" href="#">Newest</a></li>
+            <li><a class="dropdown-item" href="#">Oldest</a></li>
+            <li><a class="dropdown-item" href="#">Trending</a></li>
+          </ul>
+        </div>
+        <form class="d-flex flex-grow-1 ms-3 me-3" role="search">
+          <input class="form-control me-2 flex-grow-1" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
+      
+      
+      
+      
+          <div class="card m-3 shadow bg-light">
+            <div class="card-body">
+              <div class="d-flex mb-2 justify-content-between">
+                <div class="d-flex">
+                  <img
+                    src="../src/images/author.webp"
+                    class="rounded-circle me-2"
+                    alt="User"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="mt-1">Matt Corner</div>
+                </div>
+                <i class="fa-solid fa-fire" style="color: #ff2600"></i>
+              </div>
+              <p class="card-text">Today I went out and saw a bird.</p>
+              <p class="text-muted">14:42 1. April 2024</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a
+                  href="#"
+                  class="text-primary"
+                  style="text-decoration: underline"
+                  >Comments(5)</a
+                >
+                <span>👍 120</span>
+              </div>
+            </div>
+          </div>
+          <div class="card m-3 shadow bg-light">
+            <div class="card-body">
+              <div class="d-flex mb-2 justify-content-between">
+                <div class="d-flex">
+                  <img
+                    src="../src/images/author.webp"
+                    class="rounded-circle me-2"
+                    alt="User"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="mt-1">Matt Corner</div>
+                </div>
+                <i class="fa-solid fa-fire" style="color: #ff2600"></i>
+              </div>
+              <p class="card-text">Today I went out and saw a bird.</p>
+              <p class="text-muted">14:42 1. April 2024</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a
+                  href="#"
+                  class="text-primary"
+                  style="text-decoration: underline"
+                  >Comments(5)</a
+                >
+                <span>👍 120</span>
+              </div>
+            </div>
+          </div>
+          <div class="card m-3 shadow bg-light">
+            <div class="card-body">
+              <div class="d-flex mb-2 justify-content-between">
+                <div class="d-flex">
+                  <img
+                    src="../src/images/author.webp"
+                    class="rounded-circle me-2"
+                    alt="User"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="mt-1">Matt Corner</div>
+                </div>
+                <i class="fa-solid fa-fire" style="color: #ff2600"></i>
+              </div>
+              <p class="card-text">Today I went out and saw a bird.</p>
+              <p class="text-muted">14:42 1. April 2024</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a
+                  href="#"
+                  class="text-primary"
+                  style="text-decoration: underline"
+                  >Comments(5)</a
+                >
+                <span>👍 120</span>
+              </div>
+            </div>
+          </div>
+          <div class="card m-3 shadow bg-light">
+            <div class="card-body">
+              <div class="d-flex mb-2 justify-content-between">
+                <div class="d-flex">
+                  <img
+                    src="../src/images/author.webp"
+                    class="rounded-circle me-2"
+                    alt="User"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="mt-1">Matt Corner</div>
+                </div>
+                <i class="fa-solid fa-fire" style="color: #ff2600"></i>
+              </div>
+              <p class="card-text">Today I went out and saw a bird.</p>
+              <p class="text-muted">14:42 1. April 2024</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a
+                  href="#"
+                  class="text-primary"
+                  style="text-decoration: underline"
+                  >Comments(5)</a
+                >
+                <span>👍 120</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mb-3">
+          <bsutton class="btn btn-primary rounded">View more</button>
+        </div>
+      </section>
     </main>
 
     <footer class="footer mt-auto py-3 d-flex justify-content-center">
