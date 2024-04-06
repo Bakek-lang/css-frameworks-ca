@@ -10,6 +10,7 @@ This project aimed to create a social media application using boostrap and SASS.
 ## Built With
 
 -Bootstrap
+
 -SASS
 
 ## Getting Started
