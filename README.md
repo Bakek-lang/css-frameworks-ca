@@ -39,6 +39,11 @@ cd css-frameworks-ca
 code .
 ```
 
+3. Run script
+```
+npm run watch
+```
+
 
 ### Running the Project
 
